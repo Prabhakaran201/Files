@@ -1,0 +1,1020 @@
+C:\Users\User>docker logs 07155763f6fd
+The application will start in 0s...
+08:59:33.759 [main] INFO io.flowinquiry.FlowInquiryApp -- Loaded env variables from ./.env.local
+08:59:33.772 [main] INFO io.flowinquiry.FlowInquiryApp -- Loaded env variables from ../.env.local
+08:59:34.238 [restartedMain] INFO io.flowinquiry.FlowInquiryApp -- Loaded env variables from ./.env.local
+08:59:34.243 [restartedMain] INFO io.flowinquiry.FlowInquiryApp -- Loaded env variables from ../.env.local
+08:59:33,592 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.18
+08:59:33,598 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6df977e1 - Here is a list of configurators discovered as a service, by rank:
+08:59:33,598 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6df977e1 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+08:59:33,598 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6df977e1 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+08:59:33,599 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6df977e1 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+08:59:33,628 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6df977e1 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+08:59:33,628 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6df977e1 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+08:59:33,629 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6df977e1 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+08:59:33,638 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+08:59:33,639 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+08:59:33,639 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6df977e1 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 10 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+08:59:33,639 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6df977e1 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+08:59:33,640 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6df977e1 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+08:59:33,641 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+08:59:33,643 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+08:59:33,643 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6df977e1 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 3 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+08:59:33,643 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6df977e1 - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+08:59:33,646 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6df977e1 - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+08:59:33,646 |-INFO in ch.qos.logback.classic.BasicConfigurator@60df5242 - Setting up default configuration.
+08:59:33,696 |-INFO in ch.qos.logback.core.ConsoleAppender[console] - BEWARE: Writing to the console can be very slow. Avoid logging to the
+08:59:33,696 |-INFO in ch.qos.logback.core.ConsoleAppender[console] - console in production environments, especially in high volume systems.
+08:59:33,696 |-INFO in ch.qos.logback.core.ConsoleAppender[console] - See also https://logback.qos.ch/codes.html#slowConsole
+08:59:33,697 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6df977e1 - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 51 milliseconds. ExecutionStatus=NEUTRAL
+08:59:35,237 |-WARN in ch.qos.logback.core.joran.action.ConversionRuleAction - [converterClass] attribute is deprecated and replaced by [class]. See element [conversionRule] near line 6
+08:59:35,242 |-WARN in ch.qos.logback.classic.joran.action.LevelAction - <level> element is deprecated. Near [level] on line 45
+08:59:35,242 |-WARN in ch.qos.logback.classic.joran.action.LevelAction - Please use "level" attribute within <logger> or <root> elements instead.
+08:59:35,322 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word mask with class [io.flowinquiry.logback.MaskingMessageConverter]
+08:59:35,334 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@67613333 - value "%clr(%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX}){faint} %clr(%5p) %clr(1){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%logger{}.%method:%line){cyan} %clr(:){faint} %clr(%replace(%m){'[\r\n]', ''}){red} %n%wEx" substituted for "${CONSOLE_LOG_PATTERN:-%clr(%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd'T'HH:mm:ss.SSSXXX}}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%logger{}.%method:%line){cyan} %clr(:){faint} %clr(%replace(%m){'[\r\n]', ''}){red} %n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"
+08:59:35,335 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@45c458fe - Adding [jar:file:/app/libs/spring-boot-3.4.4.jar!/org/springframework/boot/logging/logback/defaults.xml] to configuration watch list.
+08:59:35,336 |-INFO in ConfigurationWatchList(mainURL=file:/app/resources/logback-spring.xml, fileWatchList={/app/resources/logback-spring.xml}, urlWatchList=[}) - Cannot watch [jar:file:/app/libs/spring-boot-3.4.4.jar!/org/springframework/boot/logging/logback/defaults.xml] as its protocol is not one of file, http or https.
+08:59:35,351 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word applicationName with class [org.springframework.boot.logging.logback.ApplicationNameConverter]
+08:59:35,351 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+08:59:35,351 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word correlationId with class [org.springframework.boot.logging.logback.CorrelationIdConverter]
+08:59:35,351 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word esb with class [org.springframework.boot.logging.logback.EnclosedInSquareBracketsConverter]
+08:59:35,351 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+08:59:35,351 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+08:59:35,352 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@67613333 - value "%clr(%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX}){faint} %clr(%5p) %clr(1){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%logger{}.%method:%line){cyan} %clr(:){faint} %clr(%replace(%m){'[\r\n]', ''}){red} %n%wEx" substituted for "${CONSOLE_LOG_PATTERN:-%clr(%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd'T'HH:mm:ss.SSSXXX}}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}){} %clr(${PID:-}){magenta} %clr(--- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%15.15t] ${LOG_CORRELATION_PATTERN:-}){faint}%clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"
+08:59:35,352 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@67613333 - value "UTF-8" substituted for "${CONSOLE_LOG_CHARSET:-${file.encoding:-UTF-8}}"
+08:59:35,352 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@67613333 - value "TRACE" substituted for "${CONSOLE_LOG_THRESHOLD:-TRACE}"
+08:59:35,352 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@67613333 - value "logstash" substituted for "${CONSOLE_LOG_STRUCTURED_FORMAT:-}"
+08:59:35,352 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@67613333 - value "%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX} %5p 1 --- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%t] %-40.40logger{39} : %m%n%wEx" substituted for "${FILE_LOG_PATTERN:-%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd'T'HH:mm:ss.SSSXXX}} ${LOG_LEVEL_PATTERN:-%5p} ${PID:-} --- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%t] ${LOG_CORRELATION_PATTERN:-}%-40.40logger{39} : %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"
+08:59:35,352 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@67613333 - value "UTF-8" substituted for "${FILE_LOG_CHARSET:-${file.encoding:-UTF-8}}"
+08:59:35,352 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@67613333 - value "TRACE" substituted for "${FILE_LOG_THRESHOLD:-TRACE}"
+08:59:35,352 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@67613333 - value "" substituted for "${FILE_LOG_STRUCTURED_FORMAT:-}"
+08:59:35,354 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@45c458fe - Adding [jar:file:/app/libs/spring-boot-3.4.4.jar!/org/springframework/boot/logging/logback/console-appender.xml] to configuration watch list.
+08:59:35,354 |-INFO in ConfigurationWatchList(mainURL=file:/app/resources/logback-spring.xml, fileWatchList={/app/resources/logback-spring.xml}, urlWatchList=[}) - Cannot watch [jar:file:/app/libs/spring-boot-3.4.4.jar!/org/springframework/boot/logging/logback/console-appender.xml] as its protocol is not one of file, http or https.
+08:59:35,368 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1747299575366)
+08:59:35,369 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - No 'scanPeriod' specified. Defaulting to 1 minutes
+08:59:35,372 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Will scan for changes in [ConfigurationWatchList(mainURL=file:/app/resources/logback-spring.xml, fileWatchList={/app/resources/logback-spring.xml}, urlWatchList=[})]
+08:59:35,372 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Setting ReconfigureOnChangeTask scanning period to 1 minutes
+08:59:35,377 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+08:59:35,377 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+08:59:35,388 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:59:35,399 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@67613333 - value "%clr(%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX}){faint} %clr(%5p) %clr(1){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%logger{}.%method:%line){cyan} %clr(:){faint} %clr(%replace(%m){'[\r\n]', ''}){red} %n%wEx" substituted for "${CONSOLE_LOG_PATTERN}"
+08:59:35,476 |-INFO in ch.qos.logback.core.ConsoleAppender[CONSOLE] - BEWARE: Writing to the console can be very slow. Avoid logging to the
+08:59:35,476 |-INFO in ch.qos.logback.core.ConsoleAppender[CONSOLE] - console in production environments, especially in high volume systems.
+08:59:35,476 |-INFO in ch.qos.logback.core.ConsoleAppender[CONSOLE] - See also https://logback.qos.ch/codes.html#slowConsole
+08:59:35,477 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to ERROR
+08:59:35,477 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@632479d8 - Propagating ERROR level on Logger[org.apache.catalina.startup.DigesterFactory] onto the JUL framework
+08:59:35,478 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.util.LifecycleBase] to ERROR
+08:59:35,478 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@632479d8 - Propagating ERROR level on Logger[org.apache.catalina.util.LifecycleBase] onto the JUL framework
+08:59:35,479 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.coyote.http11.Http11NioProtocol] to WARN
+08:59:35,479 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@632479d8 - Propagating WARN level on Logger[org.apache.coyote.http11.Http11NioProtocol] onto the JUL framework
+08:59:35,479 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.sshd.common.util.SecurityUtils] to WARN
+08:59:35,479 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@632479d8 - Propagating WARN level on Logger[org.apache.sshd.common.util.SecurityUtils] onto the JUL framework
+08:59:35,479 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.tomcat.util.net.NioSelectorPool] to WARN
+08:59:35,479 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@632479d8 - Propagating WARN level on Logger[org.apache.tomcat.util.net.NioSelectorPool] onto the JUL framework
+08:59:35,479 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.eclipse.jetty.util.component.AbstractLifeCycle] to ERROR
+08:59:35,479 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@632479d8 - Propagating ERROR level on Logger[org.eclipse.jetty.util.component.AbstractLifeCycle] onto the JUL framework
+08:59:35,479 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.validator.internal.util.Version] to WARN
+08:59:35,479 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@632479d8 - Propagating WARN level on Logger[org.hibernate.validator.internal.util.Version] onto the JUL framework
+08:59:35,479 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.actuate.endpoint.jmx] to WARN
+08:59:35,479 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@632479d8 - Propagating WARN level on Logger[org.springframework.boot.actuate.endpoint.jmx] onto the JUL framework
+08:59:35,479 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+08:59:35,479 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+08:59:35,483 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@67613333 - value "TRACE" substituted for "${CONSOLE_LOG_THRESHOLD}"
+08:59:35,485 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+08:59:35,485 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@67613333 - value "%clr(%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX}){faint} %clr(%5p) %clr(1){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%logger{}.%method:%line){cyan} %clr(:){faint} %clr(%replace(%m){'[\r\n]', ''}){red} %n%wEx" substituted for "${CONSOLE_LOG_PATTERN}"
+08:59:35,485 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@67613333 - value "UTF-8" substituted for "${CONSOLE_LOG_CHARSET}"
+08:59:35,487 |-INFO in ch.qos.logback.core.ConsoleAppender[CONSOLE] - BEWARE: Writing to the console can be very slow. Avoid logging to the
+08:59:35,487 |-INFO in ch.qos.logback.core.ConsoleAppender[CONSOLE] - console in production environments, especially in high volume systems.
+08:59:35,487 |-INFO in ch.qos.logback.core.ConsoleAppender[CONSOLE] - See also https://logback.qos.ch/codes.html#slowConsole
+08:59:35,487 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@67613333 - value "log.level:INFO_IS_UNDEFINED" substituted for "${log.level:INFO}"
+08:59:35,488 |-INFO in ch.qos.logback.classic.model.processor.LevelModelHandler - ROOT level set to DEBUG
+08:59:35,488 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+08:59:35,488 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@79f37abc - End of configuration.
+08:59:35,488 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@17e5361a - Registering current configuration as safe fallback point
+
+2025-05-15T08:59:36.452Z  INFO 1 --- [  restartedMain] io.flowinquiry.FlowInquiryApp.logStarting:53 : Starting FlowInquiryApp using Java 21.0.7 with PID 1 (/app/classes started by ubuntu in /)
+2025-05-15T08:59:36.457Z  INFO 1 --- [  restartedMain] io.flowinquiry.FlowInquiryApp.logStartupProfileInfo:658 : The following 1 profile is active: "prod"
+2025-05-15T08:59:38.427Z  INFO 1 --- [  restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:252 : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-15T08:59:38.429Z  INFO 1 --- [  restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:252 : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-15T08:59:41.617Z  INFO 1 --- [  restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:143 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-15T08:59:42.723Z  INFO 1 --- [  restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:211 : Finished Spring Data repository scanning in 1003 ms. Found 26 JPA repository interfaces.
+2025-05-15T08:59:50.002Z  WARN 1 --- [  restartedMain] io.undertow.websockets.jsr.handleDeployment:68 : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-05-15T08:59:50.093Z  INFO 1 --- [  restartedMain] io.undertow.servlet.log:372 : Initializing Spring embedded WebApplicationContext
+2025-05-15T08:59:50.094Z  INFO 1 --- [  restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:301 : Root WebApplicationContext: initialization completed in 11661 ms
+2025-05-15T08:59:51.110Z  INFO 1 --- [  restartedMain] io.flowinquiry.config.WebConfigurer.onStartup:44 : Web application configuration, using profiles: prod
+2025-05-15T08:59:51.111Z  INFO 1 --- [  restartedMain] io.flowinquiry.config.WebConfigurer.onStartup:49 : Web application fully configured
+2025-05-15T08:59:51.690Z  INFO 1 --- [  restartedMain] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-15T08:59:51.849Z  INFO 1 --- [  restartedMain] org.hibernate.Version.logVersion:44 : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-15T08:59:51.960Z  INFO 1 --- [  restartedMain] org.hibernate.cache.internal.RegionFactoryInitiator.initiateService:53 : HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
+2025-05-15T08:59:54.333Z  INFO 1 --- [  restartedMain] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo.addTransformer:87 : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-15T08:59:54.735Z  INFO 1 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource.getConnection:109 : Hikari - Starting...
+2025-05-15T08:59:55.703Z  INFO 1 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool.checkFailFast:554 : Hikari - Added connection org.postgresql.jdbc.PgConnection@696270cb
+2025-05-15T08:59:55.707Z  INFO 1 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource.getConnection:122 : Hikari - Start completed.
+2025-05-15T08:59:56.594Z  INFO 1 --- [  restartedMain] org.hibernate.orm.connections.pooling.initiateService:157 : HHH10001005: Database info:  Database JDBC URL [Connecting through datasource 'HikariDataSource (Hikari)']       Database driver: undefined/unknown      Database version: 16.3  Autocommit mode: undefined/unknown  Isolation level: undefined/unknown      Minimum pool size: undefined/unknown    Maximum pool size: undefined/unknown
+2025-05-15T08:59:59.362Z  WARN 1 --- [  restartedMain] org.hibernate.mapping.RootClass.checkCompositeIdentifier:354 : HHH000038: Composite-id class does not override equals(): io.flowinquiry.modules.usermanagement.domain.UserAuthorityId
+2025-05-15T08:59:59.363Z  WARN 1 --- [  restartedMain] org.hibernate.mapping.RootClass.checkCompositeIdentifier:357 : HHH000039: Composite-id class does not override hashCode(): io.flowinquiry.modules.usermanagement.domain.UserAuthorityId
+2025-05-15T09:00:02.590Z  INFO 1 --- [  restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService:59 : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-15T09:00:02.605Z  INFO 1 --- [  restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:447 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-15T09:00:02.996Z  INFO 1 --- [  restartedMain] io.flowinquiry.db.service.LiquibaseService.updateLiquibaseSchema:35 : Going to create a schema flowinquiry
+2025-05-15T09:00:04.119Z  INFO 1 --- [  restartedMain] liquibase.changelog.log:37 : Reading resource: config/liquibase/tenant/changelog/000_initial_schema.xml
+2025-05-15T09:00:04.342Z  INFO 1 --- [  restartedMain] liquibase.changelog.log:37 : Reading resource: config/liquibase/tenant/changelog/001_request_workflow_tables.xml
+2025-05-15T09:00:05.064Z  INFO 1 --- [  restartedMain] liquibase.changelog.log:37 : Reading from flowinquiry.databasechangelog
+Database is up to date, no changesets to execute
+2025-05-15T09:00:05.362Z  INFO 1 --- [  restartedMain] liquibase.changelog.log:37 : Reading from flowinquiry.databasechangelog
+
+UPDATE SUMMARY
+Run:                          0
+Previously run:               9
+Filtered out:                17
+-------------------------------
+Total change sets:           26
+
+
+FILTERED CHANGE SETS SUMMARY
+Context mismatch:            17
+
+2025-05-15T09:00:05.402Z  INFO 1 --- [  restartedMain] liquibase.util.log:37 : UPDATE SUMMARY
+2025-05-15T09:00:05.403Z  INFO 1 --- [  restartedMain] liquibase.util.log:37 : Run:                          0
+2025-05-15T09:00:05.403Z  INFO 1 --- [  restartedMain] liquibase.util.log:37 : Previously run:               9
+2025-05-15T09:00:05.405Z  INFO 1 --- [  restartedMain] liquibase.util.log:37 : Filtered out:                17
+2025-05-15T09:00:05.417Z  INFO 1 --- [  restartedMain] liquibase.util.log:37 : -------------------------------
+2025-05-15T09:00:05.417Z  INFO 1 --- [  restartedMain] liquibase.util.log:37 : Total change sets:           26
+2025-05-15T09:00:05.418Z  INFO 1 --- [  restartedMain] liquibase.util.log:37 : FILTERED CHANGE SETS SUMMARY
+2025-05-15T09:00:05.418Z  INFO 1 --- [  restartedMain] liquibase.util.log:37 : Context mismatch:            17
+2025-05-15T09:00:05.423Z  INFO 1 --- [  restartedMain] liquibase.util.log:37 : Update summary generated
+2025-05-15T09:00:05.437Z  INFO 1 --- [  restartedMain] liquibase.command.log:37 : Command execution complete
+2025-05-15T09:00:07.077Z  WARN 1 --- [  restartedMain] io.flowinquiry.modules.collab.service.MailService.reloadMailSender:88 : MailService not configured. 'mail.host' or 'mail.port' is missing.
+2025-05-15T09:00:07.695Z  INFO 1 --- [  restartedMain] org.springframework.data.jpa.repository.query.QueryEnhancerFactory.<clinit>:49 : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-15T09:00:19.594Z  INFO 1 --- [  restartedMain] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure:114 : Global AuthenticationManager configured with UserDetailsService bean with name appUserDetailService
+2025-05-15T09:00:21.235Z  INFO 1 --- [  restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>:60 : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-15T09:00:24.185Z  INFO 1 --- [  restartedMain] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler.info:117 : Starting...
+2025-05-15T09:00:24.191Z  INFO 1 --- [  restartedMain] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler.info:117 : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@660aa39b]]
+2025-05-15T09:00:24.196Z  INFO 1 --- [  restartedMain] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler.info:117 : Started.
+2025-05-15T09:00:24.236Z  INFO 1 --- [  restartedMain] io.undertow.start:120 : starting server: Undertow - 2.3.18.Final
+2025-05-15T09:00:24.267Z  INFO 1 --- [  restartedMain] org.xnio.<clinit>:95 : XNIO version 3.8.16.Final
+2025-05-15T09:00:24.302Z  INFO 1 --- [  restartedMain] org.xnio.nio.<clinit>:58 : XNIO NIO Implementation Version 3.8.16.Final
+2025-05-15T09:00:24.394Z  INFO 1 --- [  restartedMain] org.jboss.threads.<clinit>:55 : JBoss Threads version 3.5.0.Final
+2025-05-15T09:00:24.535Z  INFO 1 --- [  restartedMain] org.springframework.boot.web.embedded.undertow.UndertowWebServer.start:121 : Undertow started on port 8080 (http) with context path '/'
+2025-05-15T09:00:24.616Z  INFO 1 --- [  restartedMain] io.flowinquiry.FlowInquiryApp.logStarted:59 : Started FlowInquiryApp in 50.357 seconds (process running for 51.728)
+2025-05-15T09:00:24.637Z  INFO 1 --- [  restartedMain] io.flowinquiry.health.JWTSetupChecker.run:32 : JWT secret found and ready to use
+2025-05-15T09:00:24.640Z  WARN 1 --- [  restartedMain] io.flowinquiry.health.MailSetupChecker.run:28 : Email provider is not configured yet
+2025-05-15T09:00:24.657Z  INFO 1 --- [  restartedMain] io.flowinquiry.FlowInquiryApp.logApplicationStartup:120 : ----------------------------------------------------------
+2025-05-15T09:00:24.657Z  INFO 1 --- [  restartedMain] io.flowinquiry.FlowInquiryApp.logApplicationStartup:121 :        Application 'FlowInquiry' is running! Access URLs:
+2025-05-15T09:00:24.658Z  INFO 1 --- [  restartedMain] io.flowinquiry.FlowInquiryApp.logApplicationStartup:122 :        Local:          http://localhost:8080/
+2025-05-15T09:00:24.658Z  INFO 1 --- [  restartedMain] io.flowinquiry.FlowInquiryApp.logApplicationStartup:123 :        External:       http://172.19.0.5:8080/
+2025-05-15T09:00:24.658Z  INFO 1 --- [  restartedMain] io.flowinquiry.FlowInquiryApp.logApplicationStartup:124 :        Profile(s):     prod
+2025-05-15T09:01:24.158Z  INFO 1 --- [MessageBroker-2] org.springframework.web.socket.config.WebSocketMessageBrokerStats.lambda$initLoggingTask$0:156 : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 3, completed tasks = 1]
+2025-05-15T10:46:57.014Z  INFO 1 --- [ionShutdownHook] org.springframework.boot.web.embedded.undertow.UndertowWebServer.shutDownGracefully:325 : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-15T10:46:57.037Z  INFO 1 --- [ionShutdownHook] org.springframework.boot.web.embedded.undertow.UndertowWebServer.notifyGracefulCallback:335 : Graceful shutdown complete
+2025-05-15T10:46:57.041Z  INFO 1 --- [ionShutdownHook] io.undertow.stop:259 : stopping server: Undertow - 2.3.18.Final
+2025-05-15T10:46:57.179Z  INFO 1 --- [ionShutdownHook] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler.info:117 : Stopping...
+2025-05-15T10:46:57.182Z  INFO 1 --- [ionShutdownHook] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler.info:117 : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@660aa39b]]
+2025-05-15T10:46:57.184Z  INFO 1 --- [ionShutdownHook] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler.info:117 : Stopped.
+2025-05-15T10:46:57.268Z  INFO 1 --- [ionShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.destroy:660 : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-15T10:46:57.329Z  INFO 1 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource.close:349 : Hikari - Shutdown initiated...
+2025-05-15T10:46:57.381Z  INFO 1 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource.close:351 : Hikari - Shutdown completed.
+The application will start in 0s...
+10:50:10.986 [main] INFO io.flowinquiry.FlowInquiryApp -- Loaded env variables from ./.env.local
+10:50:10.998 [main] INFO io.flowinquiry.FlowInquiryApp -- Loaded env variables from ../.env.local
+10:50:11.505 [restartedMain] INFO io.flowinquiry.FlowInquiryApp -- Loaded env variables from ./.env.local
+10:50:11.511 [restartedMain] INFO io.flowinquiry.FlowInquiryApp -- Loaded env variables from ../.env.local
+10:50:10,807 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.18
+10:50:10,813 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5b1a3e79 - Here is a list of configurators discovered as a service, by rank:
+10:50:10,814 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5b1a3e79 -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+10:50:10,814 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5b1a3e79 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+10:50:10,814 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5b1a3e79 - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+10:50:10,837 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5b1a3e79 - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+10:50:10,837 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5b1a3e79 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+10:50:10,839 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5b1a3e79 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+10:50:10,847 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+10:50:10,848 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+10:50:10,848 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5b1a3e79 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 9 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+10:50:10,848 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5b1a3e79 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+10:50:10,850 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5b1a3e79 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+10:50:10,851 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+10:50:10,853 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.xml]
+10:50:10,853 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5b1a3e79 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 4 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+10:50:10,853 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5b1a3e79 - Trying to configure with ch.qos.logback.classic.BasicConfigurator
+10:50:10,855 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5b1a3e79 - Constructed configurator of type class ch.qos.logback.classic.BasicConfigurator
+10:50:10,855 |-INFO in ch.qos.logback.classic.BasicConfigurator@57ebe1aa - Setting up default configuration.
+10:50:10,905 |-INFO in ch.qos.logback.core.ConsoleAppender[console] - BEWARE: Writing to the console can be very slow. Avoid logging to the
+10:50:10,905 |-INFO in ch.qos.logback.core.ConsoleAppender[console] - console in production environments, especially in high volume systems.
+10:50:10,905 |-INFO in ch.qos.logback.core.ConsoleAppender[console] - See also https://logback.qos.ch/codes.html#slowConsole
+10:50:10,907 |-INFO in ch.qos.logback.classic.util.ContextInitializer@5b1a3e79 - ch.qos.logback.classic.BasicConfigurator.configure() call lasted 52 milliseconds. ExecutionStatus=NEUTRAL
+10:50:12,441 |-WARN in ch.qos.logback.core.joran.action.ConversionRuleAction - [converterClass] attribute is deprecated and replaced by [class]. See element [conversionRule] near line 6
+10:50:12,445 |-WARN in ch.qos.logback.classic.joran.action.LevelAction - <level> element is deprecated. Near [level] on line 45
+10:50:12,445 |-WARN in ch.qos.logback.classic.joran.action.LevelAction - Please use "level" attribute within <logger> or <root> elements instead.
+10:50:12,502 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word mask with class [io.flowinquiry.logback.MaskingMessageConverter]
+10:50:12,509 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5e28bb6c - value "%clr(%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX}){faint} %clr(%5p) %clr(1){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%logger{}.%method:%line){cyan} %clr(:){faint} %clr(%replace(%m){'[\r\n]', ''}){red} %n%wEx" substituted for "${CONSOLE_LOG_PATTERN:-%clr(%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd'T'HH:mm:ss.SSSXXX}}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%logger{}.%method:%line){cyan} %clr(:){faint} %clr(%replace(%m){'[\r\n]', ''}){red} %n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"
+10:50:12,510 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@4d4aa26e - Adding [jar:file:/app/libs/spring-boot-3.4.4.jar!/org/springframework/boot/logging/logback/defaults.xml] to configuration watch list.
+10:50:12,510 |-INFO in ConfigurationWatchList(mainURL=file:/app/resources/logback-spring.xml, fileWatchList={/app/resources/logback-spring.xml}, urlWatchList=[}) - Cannot watch [jar:file:/app/libs/spring-boot-3.4.4.jar!/org/springframework/boot/logging/logback/defaults.xml] as its protocol is not one of file, http or https.
+10:50:12,519 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word applicationName with class [org.springframework.boot.logging.logback.ApplicationNameConverter]
+10:50:12,519 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+10:50:12,519 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word correlationId with class [org.springframework.boot.logging.logback.CorrelationIdConverter]
+10:50:12,519 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word esb with class [org.springframework.boot.logging.logback.EnclosedInSquareBracketsConverter]
+10:50:12,519 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+10:50:12,519 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+10:50:12,520 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5e28bb6c - value "%clr(%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX}){faint} %clr(%5p) %clr(1){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%logger{}.%method:%line){cyan} %clr(:){faint} %clr(%replace(%m){'[\r\n]', ''}){red} %n%wEx" substituted for "${CONSOLE_LOG_PATTERN:-%clr(%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd'T'HH:mm:ss.SSSXXX}}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}){} %clr(${PID:-}){magenta} %clr(--- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%15.15t] ${LOG_CORRELATION_PATTERN:-}){faint}%clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"
+10:50:12,520 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5e28bb6c - value "UTF-8" substituted for "${CONSOLE_LOG_CHARSET:-${file.encoding:-UTF-8}}"
+10:50:12,520 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5e28bb6c - value "TRACE" substituted for "${CONSOLE_LOG_THRESHOLD:-TRACE}"
+10:50:12,520 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5e28bb6c - value "logstash" substituted for "${CONSOLE_LOG_STRUCTURED_FORMAT:-}"
+10:50:12,520 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5e28bb6c - value "%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX} %5p 1 --- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%t] %-40.40logger{39} : %m%n%wEx" substituted for "${FILE_LOG_PATTERN:-%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd'T'HH:mm:ss.SSSXXX}} ${LOG_LEVEL_PATTERN:-%5p} ${PID:-} --- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%t] ${LOG_CORRELATION_PATTERN:-}%-40.40logger{39} : %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"
+10:50:12,520 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5e28bb6c - value "UTF-8" substituted for "${FILE_LOG_CHARSET:-${file.encoding:-UTF-8}}"
+10:50:12,520 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5e28bb6c - value "TRACE" substituted for "${FILE_LOG_THRESHOLD:-TRACE}"
+10:50:12,520 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5e28bb6c - value "" substituted for "${FILE_LOG_STRUCTURED_FORMAT:-}"
+10:50:12,521 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@4d4aa26e - Adding [jar:file:/app/libs/spring-boot-3.4.4.jar!/org/springframework/boot/logging/logback/console-appender.xml] to configuration watch list.
+10:50:12,521 |-INFO in ConfigurationWatchList(mainURL=file:/app/resources/logback-spring.xml, fileWatchList={/app/resources/logback-spring.xml}, urlWatchList=[}) - Cannot watch [jar:file:/app/libs/spring-boot-3.4.4.jar!/org/springframework/boot/logging/logback/console-appender.xml] as its protocol is not one of file, http or https.
+10:50:12,530 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1747306212526)
+10:50:12,530 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - No 'scanPeriod' specified. Defaulting to 1 minutes
+10:50:12,538 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Will scan for changes in [ConfigurationWatchList(mainURL=file:/app/resources/logback-spring.xml, fileWatchList={/app/resources/logback-spring.xml}, urlWatchList=[})]
+10:50:12,538 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Setting ReconfigureOnChangeTask scanning period to 1 minutes
+10:50:12,542 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+10:50:12,543 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+10:50:12,550 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+10:50:12,552 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5e28bb6c - value "%clr(%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX}){faint} %clr(%5p) %clr(1){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%logger{}.%method:%line){cyan} %clr(:){faint} %clr(%replace(%m){'[\r\n]', ''}){red} %n%wEx" substituted for "${CONSOLE_LOG_PATTERN}"
+10:50:12,673 |-INFO in ch.qos.logback.core.ConsoleAppender[CONSOLE] - BEWARE: Writing to the console can be very slow. Avoid logging to the
+10:50:12,673 |-INFO in ch.qos.logback.core.ConsoleAppender[CONSOLE] - console in production environments, especially in high volume systems.
+10:50:12,673 |-INFO in ch.qos.logback.core.ConsoleAppender[CONSOLE] - See also https://logback.qos.ch/codes.html#slowConsole
+10:50:12,675 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to ERROR
+10:50:12,675 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4729b448 - Propagating ERROR level on Logger[org.apache.catalina.startup.DigesterFactory] onto the JUL framework
+10:50:12,676 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.util.LifecycleBase] to ERROR
+10:50:12,676 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4729b448 - Propagating ERROR level on Logger[org.apache.catalina.util.LifecycleBase] onto the JUL framework
+10:50:12,676 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.coyote.http11.Http11NioProtocol] to WARN
+10:50:12,676 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4729b448 - Propagating WARN level on Logger[org.apache.coyote.http11.Http11NioProtocol] onto the JUL framework
+10:50:12,677 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.sshd.common.util.SecurityUtils] to WARN
+10:50:12,677 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4729b448 - Propagating WARN level on Logger[org.apache.sshd.common.util.SecurityUtils] onto the JUL framework
+10:50:12,680 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.tomcat.util.net.NioSelectorPool] to WARN
+10:50:12,680 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4729b448 - Propagating WARN level on Logger[org.apache.tomcat.util.net.NioSelectorPool] onto the JUL framework
+10:50:12,680 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.eclipse.jetty.util.component.AbstractLifeCycle] to ERROR
+10:50:12,680 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4729b448 - Propagating ERROR level on Logger[org.eclipse.jetty.util.component.AbstractLifeCycle] onto the JUL framework
+10:50:12,680 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.validator.internal.util.Version] to WARN
+10:50:12,680 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4729b448 - Propagating WARN level on Logger[org.hibernate.validator.internal.util.Version] onto the JUL framework
+10:50:12,680 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.actuate.endpoint.jmx] to WARN
+10:50:12,680 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4729b448 - Propagating WARN level on Logger[org.springframework.boot.actuate.endpoint.jmx] onto the JUL framework
+10:50:12,680 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [CONSOLE]
+10:50:12,680 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+10:50:12,682 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5e28bb6c - value "TRACE" substituted for "${CONSOLE_LOG_THRESHOLD}"
+10:50:12,683 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+10:50:12,683 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5e28bb6c - value "%clr(%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX}){faint} %clr(%5p) %clr(1){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%logger{}.%method:%line){cyan} %clr(:){faint} %clr(%replace(%m){'[\r\n]', ''}){red} %n%wEx" substituted for "${CONSOLE_LOG_PATTERN}"
+10:50:12,684 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5e28bb6c - value "UTF-8" substituted for "${CONSOLE_LOG_CHARSET}"
+10:50:12,693 |-INFO in ch.qos.logback.core.ConsoleAppender[CONSOLE] - BEWARE: Writing to the console can be very slow. Avoid logging to the
+10:50:12,693 |-INFO in ch.qos.logback.core.ConsoleAppender[CONSOLE] - console in production environments, especially in high volume systems.
+10:50:12,693 |-INFO in ch.qos.logback.core.ConsoleAppender[CONSOLE] - See also https://logback.qos.ch/codes.html#slowConsole
+10:50:12,694 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5e28bb6c - value "log.level:INFO_IS_UNDEFINED" substituted for "${log.level:INFO}"
+10:50:12,695 |-INFO in ch.qos.logback.classic.model.processor.LevelModelHandler - ROOT level set to DEBUG
+10:50:12,695 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [CONSOLE] to Logger[ROOT]
+10:50:12,695 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@4f47fbb6 - End of configuration.
+10:50:12,695 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@542fdae9 - Registering current configuration as safe fallback point
+
+2025-05-15T10:50:13.502Z  INFO 1 --- [  restartedMain] io.flowinquiry.FlowInquiryApp.logStarting:53 : Starting FlowInquiryApp using Java 21.0.7 with PID 1 (/app/classes started by ubuntu in /)
+2025-05-15T10:50:13.515Z  INFO 1 --- [  restartedMain] io.flowinquiry.FlowInquiryApp.logStartupProfileInfo:658 : The following 1 profile is active: "prod"
+2025-05-15T10:50:14.436Z  INFO 1 --- [  restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:252 : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-15T10:50:14.439Z  INFO 1 --- [  restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:252 : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-15T10:50:18.003Z  INFO 1 --- [  restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:143 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-15T10:50:18.885Z  INFO 1 --- [  restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:211 : Finished Spring Data repository scanning in 845 ms. Found 26 JPA repository interfaces.
+2025-05-15T10:50:23.740Z  WARN 1 --- [  restartedMain] io.undertow.websockets.jsr.handleDeployment:68 : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2025-05-15T10:50:23.810Z  INFO 1 --- [  restartedMain] io.undertow.servlet.log:372 : Initializing Spring embedded WebApplicationContext
+2025-05-15T10:50:23.811Z  INFO 1 --- [  restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext:301 : Root WebApplicationContext: initialization completed in 9339 ms
+2025-05-15T10:50:24.552Z  INFO 1 --- [  restartedMain] io.flowinquiry.config.WebConfigurer.onStartup:44 : Web application configuration, using profiles: prod
+2025-05-15T10:50:24.552Z  INFO 1 --- [  restartedMain] io.flowinquiry.config.WebConfigurer.onStartup:49 : Web application fully configured
+2025-05-15T10:50:25.050Z  INFO 1 --- [  restartedMain] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-15T10:50:25.173Z  INFO 1 --- [  restartedMain] org.hibernate.Version.logVersion:44 : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-15T10:50:25.226Z  INFO 1 --- [  restartedMain] org.hibernate.cache.internal.RegionFactoryInitiator.initiateService:53 : HHH000025: Second-level cache region factory [org.hibernate.cache.jcache.internal.JCacheRegionFactory]
+2025-05-15T10:50:26.074Z  INFO 1 --- [  restartedMain] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo.addTransformer:87 : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-15T10:50:26.170Z  INFO 1 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource.getConnection:109 : Hikari - Starting...
+2025-05-15T10:50:26.468Z  INFO 1 --- [  restartedMain] com.zaxxer.hikari.pool.HikariPool.checkFailFast:554 : Hikari - Added connection org.postgresql.jdbc.PgConnection@7260c1c1
+2025-05-15T10:50:26.473Z  INFO 1 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource.getConnection:122 : Hikari - Start completed.
+2025-05-15T10:50:26.878Z  INFO 1 --- [  restartedMain] org.hibernate.orm.connections.pooling.initiateService:157 : HHH10001005: Database info:  Database JDBC URL [Connecting through datasource 'HikariDataSource (Hikari)']       Database driver: undefined/unknown      Database version: 16.3  Autocommit mode: undefined/unknown  Isolation level: undefined/unknown      Minimum pool size: undefined/unknown    Maximum pool size: undefined/unknown
+2025-05-15T10:50:29.006Z  WARN 1 --- [  restartedMain] org.hibernate.mapping.RootClass.checkCompositeIdentifier:354 : HHH000038: Composite-id class does not override equals(): io.flowinquiry.modules.usermanagement.domain.UserAuthorityId
+2025-05-15T10:50:29.015Z  WARN 1 --- [  restartedMain] org.hibernate.mapping.RootClass.checkCompositeIdentifier:357 : HHH000039: Composite-id class does not override hashCode(): io.flowinquiry.modules.usermanagement.domain.UserAuthorityId
+2025-05-15T10:50:31.138Z  INFO 1 --- [  restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService:59 : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-15T10:50:31.147Z  INFO 1 --- [  restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory:447 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-15T10:50:31.461Z  INFO 1 --- [  restartedMain] io.flowinquiry.db.service.LiquibaseService.updateLiquibaseSchema:35 : Going to create a schema flowinquiry
+2025-05-15T10:50:32.557Z  INFO 1 --- [  restartedMain] liquibase.changelog.log:37 : Reading resource: config/liquibase/tenant/changelog/000_initial_schema.xml
+2025-05-15T10:50:32.673Z  INFO 1 --- [  restartedMain] liquibase.changelog.log:37 : Reading resource: config/liquibase/tenant/changelog/001_request_workflow_tables.xml
+2025-05-15T10:50:33.349Z  INFO 1 --- [  restartedMain] liquibase.changelog.log:37 : Reading from flowinquiry.databasechangelog
+Database is up to date, no changesets to execute
+2025-05-15T10:50:33.906Z  INFO 1 --- [  restartedMain] liquibase.changelog.log:37 : Reading from flowinquiry.databasechangelog
+
+UPDATE SUMMARY
+Run:                          0
+Previously run:               9
+Filtered out:                17
+-------------------------------
+Total change sets:           26
+
+
+FILTERED CHANGE SETS SUMMARY
+Context mismatch:            17
+
+2025-05-15T10:50:33.933Z  INFO 1 --- [  restartedMain] liquibase.util.log:37 : UPDATE SUMMARY
+2025-05-15T10:50:33.941Z  INFO 1 --- [  restartedMain] liquibase.util.log:37 : Run:                          0
+2025-05-15T10:50:33.942Z  INFO 1 --- [  restartedMain] liquibase.util.log:37 : Previously run:               9
+2025-05-15T10:50:33.942Z  INFO 1 --- [  restartedMain] liquibase.util.log:37 : Filtered out:                17
+2025-05-15T10:50:33.960Z  INFO 1 --- [  restartedMain] liquibase.util.log:37 : -------------------------------
+2025-05-15T10:50:33.961Z  INFO 1 --- [  restartedMain] liquibase.util.log:37 : Total change sets:           26
+2025-05-15T10:50:33.962Z  INFO 1 --- [  restartedMain] liquibase.util.log:37 : FILTERED CHANGE SETS SUMMARY
+2025-05-15T10:50:33.962Z  INFO 1 --- [  restartedMain] liquibase.util.log:37 : Context mismatch:            17
+2025-05-15T10:50:33.990Z  INFO 1 --- [  restartedMain] liquibase.util.log:37 : Update summary generated
+2025-05-15T10:50:33.992Z  INFO 1 --- [  restartedMain] liquibase.command.log:37 : Command execution complete
+2025-05-15T10:50:35.137Z  WARN 1 --- [  restartedMain] io.flowinquiry.modules.collab.service.MailService.reloadMailSender:88 : MailService not configured. 'mail.host' or 'mail.port' is missing.
+2025-05-15T10:50:35.393Z  INFO 1 --- [  restartedMain] org.springframework.data.jpa.repository.query.QueryEnhancerFactory.<clinit>:49 : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-15T10:50:43.801Z  INFO 1 --- [  restartedMain] org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure:114 : Global AuthenticationManager configured with UserDetailsService bean with name appUserDetailService
+2025-05-15T10:50:44.877Z  INFO 1 --- [  restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver.<init>:60 : Exposing 1 endpoint beneath base path '/actuator'
+2025-05-15T10:50:46.931Z  INFO 1 --- [  restartedMain] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler.info:117 : Starting...
+2025-05-15T10:50:46.934Z  INFO 1 --- [  restartedMain] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler.info:117 : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@6a22aa6f]]
+2025-05-15T10:50:46.939Z  INFO 1 --- [  restartedMain] org.springframework.messaging.simp.broker.SimpleBrokerMessageHandler.info:117 : Started.
+2025-05-15T10:50:46.988Z  INFO 1 --- [  restartedMain] io.undertow.start:120 : starting server: Undertow - 2.3.18.Final
+2025-05-15T10:50:47.007Z  INFO 1 --- [  restartedMain] org.xnio.<clinit>:95 : XNIO version 3.8.16.Final
+2025-05-15T10:50:47.025Z  INFO 1 --- [  restartedMain] org.xnio.nio.<clinit>:58 : XNIO NIO Implementation Version 3.8.16.Final
+2025-05-15T10:50:47.076Z  INFO 1 --- [  restartedMain] org.jboss.threads.<clinit>:55 : JBoss Threads version 3.5.0.Final
+2025-05-15T10:50:47.209Z  INFO 1 --- [  restartedMain] org.springframework.boot.web.embedded.undertow.UndertowWebServer.start:121 : Undertow started on port 8080 (http) with context path '/'
+2025-05-15T10:50:47.272Z  INFO 1 --- [  restartedMain] io.flowinquiry.FlowInquiryApp.logStarted:59 : Started FlowInquiryApp in 35.75 seconds (process running for 37.053)
+2025-05-15T10:50:47.289Z  INFO 1 --- [  restartedMain] io.flowinquiry.health.JWTSetupChecker.run:32 : JWT secret found and ready to use
+2025-05-15T10:50:47.290Z  WARN 1 --- [  restartedMain] io.flowinquiry.health.MailSetupChecker.run:28 : Email provider is not configured yet
+2025-05-15T10:50:47.294Z  INFO 1 --- [  restartedMain] io.flowinquiry.FlowInquiryApp.logApplicationStartup:120 : ----------------------------------------------------------
+2025-05-15T10:50:47.295Z  INFO 1 --- [  restartedMain] io.flowinquiry.FlowInquiryApp.logApplicationStartup:121 :        Application 'FlowInquiry' is running! Access URLs:
+2025-05-15T10:50:47.295Z  INFO 1 --- [  restartedMain] io.flowinquiry.FlowInquiryApp.logApplicationStartup:122 :        Local:          http://localhost:8080/
+2025-05-15T10:50:47.295Z  INFO 1 --- [  restartedMain] io.flowinquiry.FlowInquiryApp.logApplicationStartup:123 :        External:       http://172.19.0.5:8080/
+2025-05-15T10:50:47.295Z  INFO 1 --- [  restartedMain] io.flowinquiry.FlowInquiryApp.logApplicationStartup:124 :        Profile(s):     prod
+2025-05-15T10:51:46.882Z  INFO 1 --- [MessageBroker-1] org.springframework.web.socket.config.WebSocketMessageBrokerStats.lambda$initLoggingTask$0:156 : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 3, completed tasks = 1]
+2025-05-15T10:58:19.068Z  INFO 1 --- [  XNIO-1 task-2] io.undertow.servlet.log:372 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-15T10:58:19.069Z  INFO 1 --- [  XNIO-1 task-2] org.springframework.web.servlet.DispatcherServlet.initServletBean:532 : Initializing Servlet 'dispatcherServlet'
+2025-05-15T10:58:19.080Z  INFO 1 --- [  XNIO-1 task-2] org.springframework.web.servlet.DispatcherServlet.initServletBean:554 : Completed initialization in 9 ms
+2025-05-15T10:58:19.730Z  WARN 1 --- [  XNIO-1 task-2] io.flowinquiry.modules.usermanagement.controller.errors.ExceptionTranslator.handleUserError:34 : User error (401 UNAUTHORIZED): Bad credentials
+
+org.springframework.security.authentication.BadCredentialsException: Bad credentials
+        at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:141)
+        at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+        at io.flowinquiry.modules.usermanagement.controller.LoginController.authorize(LoginController.java:51)
+        at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+        at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+        at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+        at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+        at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+        at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+        at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+        at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+        at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+        at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+        at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:547)
+        at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+        at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+        at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+        at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+        at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
+        at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
+        at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
+        at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+        at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+        at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter.doFilterInternal(BearerTokenAuthenticationFilter.java:128)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+        at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:198)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+        at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+        at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+        at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+        at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+        at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+        at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+        at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+        at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+        at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+        at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+        at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at io.flowinquiry.config.SimpleCorsFilter.doFilter(SimpleCorsFilter.java:38)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+        at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+        at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+        at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+        at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+        at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+        at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+        at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+        at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+        at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+        at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+        at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+        at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+        at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+        at io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+        at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+        at io.undertow.servlet.handlers.SessionRestoringHandler.handleRequest(SessionRestoringHandler.java:119)
+        at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+        at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+        at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+        at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+        at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+        at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+        at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+        at io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+        at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:861)
+        at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+        at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+        at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1512)
+        at org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+        at java.base/java.lang.Thread.run(Unknown Source)
+
+2025-05-15T10:58:19.830Z  WARN 1 --- [  XNIO-1 task-2] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.logException:254 : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-05-15T10:59:47.515Z  WARN 1 --- [  XNIO-1 task-2] io.flowinquiry.modules.usermanagement.controller.errors.ExceptionTranslator.handleUserError:34 : User error (401 UNAUTHORIZED): Bad credentials
+
+org.springframework.security.authentication.BadCredentialsException: Bad credentials
+        at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:141)
+        at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+        at io.flowinquiry.modules.usermanagement.controller.LoginController.authorize(LoginController.java:51)
+        at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+        at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+        at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+        at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+        at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+        at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+        at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+        at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+        at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+        at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+        at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:547)
+        at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+        at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+        at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+        at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+        at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
+        at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
+        at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
+        at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+        at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+        at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter.doFilterInternal(BearerTokenAuthenticationFilter.java:128)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+        at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:198)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+        at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+        at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+        at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+        at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+        at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+        at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+        at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+        at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+        at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+        at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+        at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at io.flowinquiry.config.SimpleCorsFilter.doFilter(SimpleCorsFilter.java:38)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+        at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+        at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+        at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+        at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+        at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+        at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+        at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+        at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+        at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+        at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+        at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+        at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+        at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+        at io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+        at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+        at io.undertow.servlet.handlers.SessionRestoringHandler.handleRequest(SessionRestoringHandler.java:119)
+        at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+        at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+        at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+        at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+        at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+        at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+        at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+        at io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+        at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:861)
+        at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+        at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+        at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+        at org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+        at java.base/java.lang.Thread.run(Unknown Source)
+
+2025-05-15T10:59:47.521Z  WARN 1 --- [  XNIO-1 task-2] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.logException:254 : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-05-15T11:00:07.120Z  WARN 1 --- [  XNIO-1 task-2] io.flowinquiry.modules.usermanagement.controller.errors.ExceptionTranslator.handleUserError:34 : User error (401 UNAUTHORIZED): Bad credentials
+
+org.springframework.security.authentication.BadCredentialsException: Bad credentials
+        at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:141)
+        at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+        at io.flowinquiry.modules.usermanagement.controller.LoginController.authorize(LoginController.java:51)
+        at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+        at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+        at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+        at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+        at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+        at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+        at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+        at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+        at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+        at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+        at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:547)
+        at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+        at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+        at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+        at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+        at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
+        at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
+        at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
+        at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+        at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+        at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter.doFilterInternal(BearerTokenAuthenticationFilter.java:128)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+        at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:198)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+        at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+        at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+        at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+        at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+        at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+        at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+        at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+        at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+        at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+        at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+        at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at io.flowinquiry.config.SimpleCorsFilter.doFilter(SimpleCorsFilter.java:38)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+        at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+        at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+        at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+        at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+        at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+        at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+        at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+        at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+        at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+        at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+        at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+        at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+        at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+        at io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+        at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+        at io.undertow.servlet.handlers.SessionRestoringHandler.handleRequest(SessionRestoringHandler.java:119)
+        at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+        at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+        at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+        at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+        at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+        at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+        at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+        at io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+        at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:861)
+        at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+        at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+        at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+        at org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+        at java.base/java.lang.Thread.run(Unknown Source)
+
+2025-05-15T11:00:07.125Z  WARN 1 --- [  XNIO-1 task-2] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.logException:254 : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-05-15T11:00:46.852Z  WARN 1 --- [  XNIO-1 task-2] io.flowinquiry.modules.usermanagement.controller.UserAccountController.requestPasswordReset:178 : Password reset requested for non existing mail kumarkk99832@gmail.com
+2025-05-15T11:02:02.083Z  WARN 1 --- [  XNIO-1 task-2] io.flowinquiry.modules.usermanagement.controller.UserAccountController.requestPasswordReset:178 : Password reset requested for non existing mail kumarkk99832@gmail.com
+2025-05-15T11:02:58.107Z  WARN 1 --- [  XNIO-1 task-2] io.flowinquiry.modules.usermanagement.controller.errors.ExceptionTranslator.handleUserError:34 : User error (401 UNAUTHORIZED): Bad credentials
+
+org.springframework.security.authentication.BadCredentialsException: Bad credentials
+        at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:141)
+        at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182)
+        at io.flowinquiry.modules.usermanagement.controller.LoginController.authorize(LoginController.java:51)
+        at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+        at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+        at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+        at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+        at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+        at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+        at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+        at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+        at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+        at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+        at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+        at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:547)
+        at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+        at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+        at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+        at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+        at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
+        at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
+        at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
+        at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+        at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+        at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter.doFilterInternal(BearerTokenAuthenticationFilter.java:128)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+        at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:198)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+        at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+        at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+        at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+        at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
+        at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
+        at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+        at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+        at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+        at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+        at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+        at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+        at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+        at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+        at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+        at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+        at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at io.flowinquiry.config.SimpleCorsFilter.doFilter(SimpleCorsFilter.java:38)
+        at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+        at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+        at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+        at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+        at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+        at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+        at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+        at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+        at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+        at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+        at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+        at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+        at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+        at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+        at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+        at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+        at io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+        at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+        at io.undertow.servlet.handlers.SessionRestoringHandler.handleRequest(SessionRestoringHandler.java:119)
+        at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+        at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+        at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+        at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+        at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+        at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+        at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+        at io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+        at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:861)
+        at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+        at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+        at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+        at org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+        at java.base/java.lang.Thread.run(Unknown Source)
+
+2025-05-15T11:02:58.114Z  WARN 1 --- [  XNIO-1 task-2] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.logException:254 : Resolved [org.springframework.security.authentication.BadCredentialsException: Bad credentials]
+2025-05-15T11:03:33.518Z  WARN 1 --- [  XNIO-1 task-5] org.springframework.data.web.config.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier.changeProperties:156 : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!       For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+2025-05-15T11:07:05.710Z  INFO 1 --- [flex-app-task-2] org.springframework.scheduling.annotation.AnnotationAsyncExecutionInterceptor.getDefaultExecutor:254 : More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [asyncTaskExecutor, clientInboundChannelExecutor, clientOutboundChannelExecutor, brokerChannelExecutor, messageBrokerTaskScheduler]
+2025-05-15T11:21:46.733Z  INFO 1 --- [MessageBroker-2] org.springframework.web.socket.config.WebSocketMessageBrokerStats.lambda$initLoggingTask$0:156 : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 4, active threads = 1, queued tasks = 3, completed tasks = 34]
